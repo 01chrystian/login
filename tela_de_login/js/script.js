@@ -55,7 +55,7 @@ function enviarEmail() {
 
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://velvety-chaja-df4fdf.netlify.app/');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://velvety-chaja-df4fdf.netlify.app');
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
