@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h5 class="card-title text-center">Login</h5>
+                    <div class="text-center mb-3">
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-primary me-2" onclick="exibirOpcao(true)">Já tenho cadastro</button>
+                            <button class="btn btn-primary" onclick="exibirOpcao(false)">Ainda não sou
+                                cadastrado</button>
+                        </div>
+                    </div>
+                    <div id="opcaoLogin" style="display: none;">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" onclick="logarComGoogle()">Logar com Google</button>
+                        </div>
+                    </div>
+                    <div id="opcaoSuporte" style="display: none;">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-secondary" onclick="abrirModalSuporte()">Enviar E-mail para
+                                Suporte</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Elemento de carregamento -->
+    <div id="loading">
+        <!-- Adicione aqui a sua imagem animada ou ícone de carregamento -->
+        <img src="loading.gif" alt="Carregando...">
+    </div>
+
+    <!-- Popup -->
+    <div id="popupContainer" class="popup-container" style="display: none;">
+        <div class="popup">
+            <h5 class="popup__title" id="popupTitle"></h5>
+            <div class="popup__content" id="popupContent"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
