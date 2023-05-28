@@ -50,7 +50,7 @@ function fecharPopup() {
 function enviarEmail() {
     var email = document.getElementById('email').value;
     const xhr = new XMLHttpRequest();
-    const url = 'https://localhost:3000/enviar/email/suporte';
+    const url = 'https://qbahxt.conteige.cloud/enviar/email/suporte';
     const token = '2730266471202'; // O mesmo token definido no servidor
 
     xhr.open('POST', url, true);
