@@ -55,7 +55,7 @@ function enviarEmail() {
 
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://stellular-donut-32aa6b.netlify.app/');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://boisterous-seahorse-025fd3.netlify.app/');
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
