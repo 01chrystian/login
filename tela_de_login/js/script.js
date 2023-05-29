@@ -13,7 +13,7 @@ function exibirOpcao(jaCadastrado) {
 
 function logarComGoogle() {
     // Lógica para autenticação com o Google aqui
-    window.location.href = 'http://gsmnhl.conteige.cloud/'
+    window.location.href = 'https://vupodk.conteige.cloud'
 }
 
 function abrirModalSuporte() {
@@ -50,7 +50,7 @@ function fecharPopup() {
 function enviarEmail() {
     var email = document.getElementById('email').value;
     const xhr = new XMLHttpRequest();
-    const url = 'https://gsmnhl.conteige.cloud/enviar/email/suporte';
+    const url = 'https://vupodk.conteige.cloud/enviar/email/suporte';
     const token = '2730266471202'; // O mesmo token definido no servidor
 
     xhr.open('POST', url, true);
