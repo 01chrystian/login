@@ -27,6 +27,7 @@
                             <button class="btn btn-primary" onclick="logarComGoogle()">Logar com Google</button>
                         </div>
                     </div>
+
                     <div id="opcaoSuporte" style="display: none;">
                         <div class="d-grid gap-2">
                             <button class="btn btn-secondary" onclick="abrirModalSuporte()">Enviar E-mail para
@@ -37,13 +38,10 @@
             </div>
         </div>
     </div>
-    <!-- Elemento de carregamento -->
-    <div id="loading">
-        <!-- Adicione aqui a sua imagem animada ou ícone de carregamento -->
-        <img src="loading.gif" alt="Carregando...">
+    <div id="loading" style="display: none;">
+        <img src="./img/giphy.gif" alt="Carregando...">
     </div>
 
-    <!-- Popup -->
     <div id="popupContainer" class="popup-container" style="display: none;">
         <div class="popup">
             <h5 class="popup__title" id="popupTitle"></h5>
@@ -51,7 +49,7 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="http://localhost:3000/services/js/bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 </body>
 
